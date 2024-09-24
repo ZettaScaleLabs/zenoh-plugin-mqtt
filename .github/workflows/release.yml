@@ -62,7 +62,7 @@ jobs:
   build-standalone:
     name: Build executables and libraries
     needs: tag
-    uses: eclipse-zenoh/ci/.github/workflows/build-crates-standalone.yml@main
+    uses: ZettaScaleLabs/ci/.github/workflows/build-crates-standalone.yml@update-windows-runner
     with:
       repo: ${{ github.repository }}
       version: ${{ needs.tag.outputs.version }}
